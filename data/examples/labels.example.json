@@ -1,0 +1,30 @@
+{
+  "type": "labels",
+  "labels": [
+    {
+      "name": "status::backlog",
+      "project": "all",
+      "color": "#D9534F",
+      "description": "Not started yet."
+    },
+    {
+      "name": "priority::high",
+      "project": "all",
+      "color": "#F0AD4E",
+      "description": "Must be done first."
+    },
+    {
+      "name": "type::user-story",
+      "scope": "project",
+      "project": "repo",
+      "color": "#1F75CB",
+      "description": "Issue created from a user story."
+    },
+    {
+      "name": "phase::1",
+      "scope": "group",
+      "color": "#34495E",
+      "description": "Work that belongs to phase 1."
+    }
+  ]
+}

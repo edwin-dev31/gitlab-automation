@@ -1,0 +1,73 @@
+{
+  "type": "issues",
+  "defaults": {
+    "labels": [
+      "status::backlog"
+    ]
+  },
+  "issues": [
+    {
+      "project": "repo",
+      "title": "Stop creating labels that already exist",
+      "description": "Running `labels create` twice produces duplicates in the project.\n\n**Steps to reproduce**\n1. Run `python main.py labels create`.\n2. Change nothing in `data/labels.json`.\n3. Run the same command again.",
+      "notes": [
+        "Labels are identified by name inside their project.",
+        "The same name under a different project is a different label."
+      ],
+      "labels": [
+        "type::bug",
+        "priority::high"
+      ],
+      "milestone": "Automation Week 2 - Core Commands",
+      "start_date": "2026-03-10",
+      "due_date": "2026-03-12",
+      "assignees": [
+        "group-member-username"
+      ],
+      "issue_type": "issue",
+      "weight": 3,
+      "epic": "Automation 1 - GitLab Toolkit",
+      "state": "opened"
+    },
+    {
+      "project": "repo",
+      "title": "Preview every write before it reaches GitLab",
+      "description": "There is no way to see what a run would do without writing it. A dry run mode must report each action and change nothing.",
+      "notes": [
+        "The summary has to report what it *would* create, not what it created.",
+        "Dry run still needs to read labels, milestones and epics to resolve names to IDs."
+      ],
+      "acceptance_criteria": [
+        "No POST, PUT or DELETE request is sent while dry run is on.",
+        "The final summary uses the past conditional.",
+        "Every created item keeps its scoped title so a real run can skip it later."
+      ],
+      "labels": [
+        "type::technical-debt",
+        "priority::medium"
+      ],
+      "milestone": "Automation Week 3 - Verification",
+      "start_date": "2026-03-23",
+      "due_date": "2026-03-25",
+      "issue_type": "issue",
+      "weight": 5,
+      "epic": "Automation 1 - GitLab Toolkit",
+      "state": "opened"
+    },
+    {
+      "project": "repo",
+      "title": "Replace milestone titles with numeric IDs",
+      "description": "Issues that declare `\"milestone\": \"Week 2\"` fail, because GitLab only accepts a numeric `milestone_id`. Resolve every title to its ID before creating the issue, and never send the raw title.",
+      "labels": [
+        "type::bug"
+      ],
+      "milestone": "Automation Week 2 - Core Commands",
+      "start_date": "2026-03-13",
+      "due_date": "2026-03-17",
+      "issue_type": "issue",
+      "weight": 3,
+      "epic": "Automation 1 - GitLab Toolkit",
+      "state": "opened"
+    }
+  ]
+}

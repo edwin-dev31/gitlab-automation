@@ -1,0 +1,33 @@
+{
+  "type": "issue_updates",
+  "issue_updates": [
+    {
+      "project": "repo",
+      "issue": "Stop creating labels that already exist",
+      "state": "closed",
+      "labels": [
+        "status::done",
+        "type::bug",
+        "priority::high"
+      ],
+      "notes": [
+        "This file only changes what it declares. Any field left out stays as it is.",
+        "The titles are matched exactly against existing issues.",
+        "Run it after issues.example.json so the issues are already there."
+      ]
+    },
+    {
+      "project": "repo",
+      "issue": "Replace milestone titles with numeric IDs",
+      "state": "closed",
+      "labels": [
+        "status::done",
+        "type::bug"
+      ],
+      "milestone": "Automation Week 3 - Verification",
+      "notes": [
+        "Moving a milestone is just another field in the same document."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "type": "user_stories",
+  "defaults": {
+    "labels": [
+      "status::backlog",
+      "type::user-story"
+    ],
+    "issue_type": "issue",
+    "confidential": false
+  },
+  "user_stories": [
+    {
+      "project": "repo",
+      "epic": "Automation 1 - GitLab Toolkit",
+      "title": "US-01: Load configuration from .env and the environment",
+      "description": "As a developer, I want the tool to read its settings from a .env file and the environment so that credentials and targets stay out of the code.",
+      "acceptance_criteria": [
+        "Read GITLAB_URL, GITLAB_TOKEN and GITLAB_PROJECTS from the environment.",
+        "Load .env without overriding variables that are already present.",
+        "Fail with a message that names the missing variable before any API call."
+      ],
+      "definition_of_done": [
+        "Configuration loads from a fresh checkout with only a .env present.",
+        "A missing token is reported before the first request.",
+        "The precedence between environment and .env is documented."
+      ],
+      "labels": [
+        "week::1"
+      ],
+      "milestone": "Automation Week 1 - Foundations",
+      "start_date": "2026-03-02",
+      "due_date": "2026-03-03"
+    },
+    {
+      "project": "repo",
+      "epic": "Automation 1 - GitLab Toolkit",
+      "title": "US-02: Validate a document offline",
+      "description": "As a developer, I want to validate a JSON document without contacting GitLab so that I can catch mistakes before anything is written.",
+      "acceptance_criteria": [
+        "Perform no network request while validating.",
+        "Point every error at the file and the field.",
+        "Exit with a non-zero code when at least one error is found."
+      ],
+      "definition_of_done": [
+        "Validation runs without a token in the environment.",
+        "A malformed document reports at least one error."
+      ],
+      "labels": [
+        "week::1"
+      ],
+      "milestone": "Automation Week 1 - Foundations",
+      "start_date": "2026-03-04",
+      "due_date": "2026-03-05"
+    },
+    {
+      "project": "repo",
+      "epic": "Automation 1 - GitLab Toolkit",
+      "title": "US-03: Preview every write with dry run",
+      "description": "As a developer, I want a dry run mode that reports every action and writes nothing so that I can review a change before applying it.",
+      "acceptance_criteria": [
+        "Send no POST, PUT or DELETE request while dry run is on.",
+        "Use the past conditional in the final summary.",
+        "Keep every item title scoped so a real run can skip it later."
+      ],
+      "definition_of_done": [
+        "A dry run against a real group changes nothing.",
+        "The summary reports what would be created."
+      ],
+      "labels": [
+        "week::2"
+      ],
+      "milestone": "Automation Week 2 - Core Commands",
+      "start_date": "2026-03-18",
+      "due_date": "2026-03-20"
+    },
+    {
+      "project": "repo",
+      "epic": "Automation 1 - GitLab Toolkit",
+      "title": "US-04: Degrade gracefully on groups without epics",
+      "description": "As a developer, I want the item commands to keep working on a Free group so that a missing licence does not block the backlog.",
+      "acceptance_criteria": [
+        "Explain a 403 from the epics API as a licence limit.",
+        "Still create the stories and issues, without their epic.",
+        "Offer a flag to skip the epic lookup entirely."
+      ],
+      "definition_of_done": [
+        "stories create succeeds on a group without epics.",
+        "The behaviour is covered by a test."
+      ],
+      "labels": [
+        "week::3",
+        "type::technical-debt"
+      ],
+      "milestone": "Automation Week 3 - Verification",
+      "start_date": "2026-03-23",
+      "due_date": "2026-03-24"
+    }
+  ]
+}

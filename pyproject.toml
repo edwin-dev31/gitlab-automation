@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gitlab-automation"
+version = "1.0.0"
+description = "Mirror JSON documents into GitLab: epics, user stories, issues, milestones and labels."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.31,<3",
+    "python-dotenv>=1.0,<2",
+]
+
+[project.scripts]
+gitlab-automation = "automation.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

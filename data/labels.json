@@ -1,0 +1,123 @@
+{
+  "type": "labels",
+  "labels": [
+    {
+      "name": "status::backlog",
+      "scope": "project",
+      "project": "all",
+      "color": "#D9534F",
+      "description": "Not started yet."
+    },
+    {
+      "name": "status::ready",
+      "scope": "project",
+      "project": "all",
+      "color": "#F0AD4E",
+      "description": "Refined and ready to be picked up."
+    },
+    {
+      "name": "status::in-progress",
+      "scope": "project",
+      "project": "all",
+      "color": "#1F75CB",
+      "description": "Currently being worked on."
+    },
+    {
+      "name": "status::review",
+      "scope": "project",
+      "project": "all",
+      "color": "#9B59B6",
+      "description": "Waiting for code review."
+    },
+    {
+      "name": "status::done",
+      "scope": "project",
+      "project": "all",
+      "color": "#5EB85C",
+      "description": "Finished and accepted."
+    },
+    {
+      "name": "type::user-story",
+      "scope": "project",
+      "project": "all",
+      "color": "#1F75CB",
+      "description": "Item created from a user story."
+    },
+    {
+      "name": "type::epic",
+      "scope": "project",
+      "project": "all",
+      "color": "#34495E",
+      "description": "Group of related user stories."
+    },
+    {
+      "name": "type::bug",
+      "scope": "project",
+      "project": "all",
+      "color": "#D9534F",
+      "description": "Unexpected behaviour that must be fixed."
+    },
+    {
+      "name": "type::technical-debt",
+      "scope": "project",
+      "project": "all",
+      "color": "#7F8C8D",
+      "description": "Work that improves the codebase without changing behaviour."
+    },
+    {
+      "name": "priority::high",
+      "scope": "project",
+      "project": "all",
+      "color": "#D9534F",
+      "description": "Must be done first."
+    },
+    {
+      "name": "priority::medium",
+      "scope": "project",
+      "project": "all",
+      "color": "#F0AD4E",
+      "description": "Important but not blocking."
+    },
+    {
+      "name": "priority::low",
+      "scope": "project",
+      "project": "all",
+      "color": "#5EB85C",
+      "description": "Can be deferred."
+    },
+    {
+      "name": "week::1",
+      "scope": "project",
+      "project": "all",
+      "color": "#7F8C8D",
+      "description": "Sprint or week 1."
+    },
+    {
+      "name": "week::2",
+      "scope": "project",
+      "project": "all",
+      "color": "#5EB85C",
+      "description": "Sprint or week 2."
+    },
+    {
+      "name": "week::3",
+      "scope": "project",
+      "project": "all",
+      "color": "#5EB85C",
+      "description": "Sprint or week 3."
+    },
+    {
+      "name": "week::4",
+      "scope": "project",
+      "project": "all",
+      "color": "#5EB85C",
+      "description": "Sprint or week 4."
+    },
+    {
+      "name": "phase::1",
+      "scope": "group",
+      "color": "#34495E",
+      "description": "Phase 1 of the project."
+    }
+  ]
+}

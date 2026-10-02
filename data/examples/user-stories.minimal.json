@@ -1,0 +1,33 @@
+{
+  "type": "user_stories",
+  "defaults": {
+    "labels": [
+      "status::backlog"
+    ],
+    "milestone": "Automation Phase 1 - Toolkit MVP",
+    "start_date": "2026-03-02",
+    "due_date": "2026-03-27"
+  },
+  "user_stories": [
+    {
+      "project": "repo",
+      "title": "US-01: Check a JSON document without calling GitLab",
+      "description": "As a developer, I want to validate a JSON document offline so that I can catch mistakes before the tool writes anything to GitLab.",
+      "acceptance_criteria": [
+        "Only project, title and description are declared.",
+        "Running the command contacts no GitLab endpoint.",
+        "Every reported error points at the file and the field."
+      ],
+      "definition_of_done": [
+        "The command runs without a token in the environment.",
+        "A broken document reports at least one error."
+      ],
+      "notes": [
+        "This file is the smallest payload that still validates. Copy it as a starting point."
+      ],
+      "issue_type": "issue",
+      "weight": 2,
+      "state": "opened"
+    }
+  ]
+}

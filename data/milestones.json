@@ -1,0 +1,40 @@
+{
+  "type": "milestones",
+  "milestones": [
+    {
+      "title": "Automation Phase 1 - Toolkit MVP",
+      "description": "First usable version of the GitLab automation toolkit: the CLI runs, the documents validate and the writes are idempotent.",
+      "scope": "group",
+      "start_date": "2026-03-02",
+      "due_date": "2026-03-27",
+      "state": "opened"
+    },
+    {
+      "title": "Automation Week 1 - Foundations",
+      "description": "Project skeleton, configuration loading, the JSON schema and offline validation.",
+      "scope": "project",
+      "project": "repo",
+      "start_date": "2026-03-02",
+      "due_date": "2026-03-06",
+      "state": "opened"
+    },
+    {
+      "title": "Automation Week 2 - Core Commands",
+      "description": "Create, list and update commands for labels, milestones, epics, stories and issues.",
+      "scope": "project",
+      "project": "repo",
+      "start_date": "2026-03-09",
+      "due_date": "2026-03-20",
+      "state": "opened"
+    },
+    {
+      "title": "Automation Week 3 - Verification",
+      "description": "Dry run, offline validation, tests and documentation.",
+      "scope": "project",
+      "project": "repo",
+      "start_date": "2026-03-23",
+      "due_date": "2026-03-27",
+      "state": "opened"
+    }
+  ]
+}

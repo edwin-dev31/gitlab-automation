@@ -1,0 +1,30 @@
+{
+  "type": "epics",
+  "epics": [
+    {
+      "title": "Automation 1 - GitLab Toolkit",
+      "description": "First phase of the GitLab automation toolkit: a CLI that mirrors JSON documents into a GitLab group. This phase covers configuration, offline validation, idempotent creation of labels, milestones, epics, user stories and issues, dry run, and the tests and documentation that keep the tool trustworthy.",
+      "objectives": [
+        "Read configuration from a .env file and the environment",
+        "Define and document the JSON payload schema for every type",
+        "Validate documents offline before anything is written",
+        "Discover the documents under data/ and merge their defaults",
+        "Resolve project aliases and milestone titles to numeric IDs",
+        "Create labels, milestones and issues idempotently",
+        "Render user stories with acceptance criteria and definition of done",
+        "Preview every write with a dry run",
+        "Degrade gracefully on groups without epics",
+        "Update existing work through separate update documents",
+        "Verify the environment with a doctor command",
+        "Cover the tool with an offline test suite and a README"
+      ],
+      "labels": [
+        "type::epic",
+        "phase::1"
+      ],
+      "start_date": "2026-03-02",
+      "due_date": "2026-03-27",
+      "state": "opened"
+    }
+  ]
+}

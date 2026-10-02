@@ -1,0 +1,17 @@
+{
+  "type": "epic_updates",
+  "epic_updates": [
+    {
+      "epic": "Automation 1 - GitLab Toolkit",
+      "state": "closed",
+      "labels": [
+        "status::done",
+        "phase::1"
+      ],
+      "notes": [
+        "Epics live in the group, so this document needs no project.",
+        "Closing an epic is what stops it from showing up as active work."
+      ]
+    }
+  ]
+}
